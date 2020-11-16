@@ -1,0 +1,25 @@
+Package: rSleepPSGcohort
+Type: Package
+Title: Sleep PSG data analysis package For BCB410H
+Version: 0.1.0
+Authors@R: person("M", "Patel", email = "mitu.patel@mail.utoronto.ca", role = c("aut", "cre"))
+Maintainer: Mit Patel <mitu.patel@mail.utoronto.caa>
+Description: An example package to illustrate components of an R package.
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.1.0)
+biocViews:
+Remotes: github::hadley/ggplot2
+Imports: 
+    stats,
+    edgeR,
+    ggplot2,
+License: MIT + file LICENSE
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Suggests: 
+    testthat,
+    knitr,
+    rmarkdown,
+    RTCGA.rnaseq
+VignetteBuilder: knitr
