@@ -5,12 +5,12 @@ This package makes it easier to do cohort analysis of participants that take par
 
 ## Installation 
 The package can be installed with the following code snippet from Github: 
+  
 ```R
 require("devtools")
-devtools::install_github("kevin949373048/pdb3D", build_vignettes = TRUE)
-library("pdb3D")
+devtools::install_github("mitp19/rSleepPSGcohort", build_vignettes = TRUE)
+library("rSleepPSGcohort")
 ```
-
 
 ## Overview 
 
