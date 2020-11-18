@@ -9,8 +9,8 @@
 #' sleepSummary <- ProcessData("data")
 #'
 #' @export
-#' @importFrom XML
-#' @importFrom methods
+#' @import XML
+#' @import methods
 #' 
 
 ProcessData <- function(directory) {

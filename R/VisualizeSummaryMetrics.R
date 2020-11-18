@@ -10,7 +10,7 @@
 #' print(VisualizeSummaryMetrics(metricsDf))
 #'
 #' @export
-#' @importFrom ggplot2
+#' @import ggplot2
 
 VisualizeSummaryMetrics <- function(summaryMetrics) {
   metricsPlot <- ggplot2::ggplot(summaryMetrics, ggplot2::aes(x=filename, y=time_asleep)) +
