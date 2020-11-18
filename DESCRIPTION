@@ -4,13 +4,14 @@ Title: Sleep PSG data analysis package For BCB410H
 Version: 0.1.0
 Authors@R: person("M", "Patel", email = "mitu.patel@mail.utoronto.ca", role = c("aut", "cre"))
 Maintainer: Mit Patel <mitu.patel@mail.utoronto.caa>
-Description: An example package to illustrate components of an R package.
+Description:This package makes it easier to do cohort analysis of participants that take part insleep polysomnography (PSG) studies. The package has the ability to take technician scored polysomnography data files of individual participants, create cohorts from these participants and compute summary metrics and visuals on a individual participant and cohort-level.
 Encoding: UTF-8
 LazyData: true
 Depends: R (>= 3.1.0)
 biocViews:
 Remotes: github::hadley/ggplot2
 Imports: 
+    XML,
     edgeR,
     ggplot2,
 License: MIT + file LICENSE
@@ -20,5 +21,4 @@ Suggests:
     testthat,
     knitr,
     rmarkdown,
-    RTCGA.rnaseq
 VignetteBuilder: knitr

@@ -7,7 +7,7 @@ output:
     toc: true
     number_sections: false
 vignette: >
-  %\VignetteIndexEntry{A tour of TestingPackage}
+  %\VignetteIndexEntry{A tour of rSleepPSGCohort}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -36,7 +36,7 @@ To download **rSleepPSGCohort**, use the following commands:
 
 ``` r
 require("devtools")
-install_github("anjalisilva/rSleepPSGCohort", build_vignettes = TRUE)
+install_github("mitp19/rSleepPSGCohort", build_vignettes = TRUE)
 library("rSleepPSGCohort")
 ```
 To list all sample functions available in the package:
@@ -46,7 +46,7 @@ ls("package:rSleepPSGCohort")
 
 To list all sample datasets available in the package:
 ``` r
-data(package = "TestingPackage")
+data(package = "rSleepPSGCohort")
 ```
 
 <br>
@@ -90,15 +90,13 @@ The minimal requirements of an R package is described, followed by other compone
 
 ## Package References
 
-[Silva, A. (2020) rSleepPSGCohort: A sleep PSG annonated data analysis R Package For BCB410H. Unpublished.](https://github.com/mitp19/rSleepPSGCohort)
+[Patel, M. (2020) rSleepPSGCohort: A sleep PSG annonated data analysis R Package For BCB410H. Unpublished.](https://github.com/mitp19/rSleepPSGCohort)
 
 <br>
 
 ## Other References
 
 R Core Team (2020). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. https://www.R-project.org/
-
-BioRender. (2020). Image created by Silva, A. Retrieved October 30, 2020, from https://app.biorender.com/
 
 Wickham, H. and Bryan, J. (2019). *R Packages* (2nd edition). Newton, Massachusetts: O'Reilly Media. https://r-pkgs.org/
 

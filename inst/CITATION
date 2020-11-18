@@ -1,0 +1,12 @@
+citHeader("To cite rSleepPSGcohort in publications use:")
+
+citEntry(
+  entry    = "Unpublished",
+  title    = "rSleepPSGcohort: Sleep PSG data analysis package For BCB410H",
+  author   = "Mit Patel",
+  note     = "Unpublished",
+  year     = "2020",
+  textVersion = paste(
+"Patel, M. (2020) rSleepPSGcohort: Sleep PSG data analysis package For BCB410H. Unpublished. URL https://github.com/mitp19/rSleepPSGcohort"
+  )
+)

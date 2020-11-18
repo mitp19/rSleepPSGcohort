@@ -1,28 +1,31 @@
-README.Rmd
-================
+---
+title: "README.Rmd"
+output: github_document
+---
 
 ## Description
-
 This package makes it easier to do cohort analysis of participants that take part insleep polysomnography (PSG) studies. The package has the ability to take technician scored polysomnography data files of individual participants, create cohorts from these participants and compute summary metrics and visuals on a individual participant and cohort-level.
 
-## Installation
+## Installation 
+The package can be installed with the following code snippet from Github: 
 
-The package can be installed with the following code snippet from Github:
-
-``` r
+```r
 require("devtools")
 devtools::install_github("mitp19/rSleepPSGcohort", build_vignettes = TRUE)
 library("rSleepPSGcohort")
 ```
 
-## Overview
 
-``` r
+
+
+## Overview 
+```r
 ls("package:rSleepPSGcohort")
 data(package = "rSleepPSGcohort") # optional
 ```
 
-`rSleepPSGcohort` contains 2 functions to help aggregate and visualize human-scored scored sleep data. *ProcessData* takes a directory of sleep PSG XML files and combines the key metrics into a dataframe. *VisualizeSummaryMetrics* takes the output from *ProcessData*, returning a visual of total sleep time, wake time and night time for each individual.
+`rSleepPSGcohort` contains 2 functions to help aggregate and visualize human-scored scored sleep data. *ProcessData* takes a directory of sleep PSG XML files and combines the key
+metrics into a dataframe. *VisualizeSummaryMetrics* takes the output from *ProcessData*, returning a visual of total sleep time, wake time and night time for each individual. 
 
 ``` r
 browseVignettes("rSleepPSGcohort")
@@ -30,10 +33,15 @@ browseVignettes("rSleepPSGcohort")
 
 The package tree structure is provided below.
 
+
 ## Contributions
+
+
 
 ## References
 
-## Acknowledgements
 
+
+
+## Acknowledgements 
 This package was developed for BCB410H: Applied Bioinformatics, University of Toronto, Toronto, Canada, 2020. `rSleepPSGcohort` welcomes issues, enhancement requests, and other contributions. To submit an issue, use the [GitHub issues](https://github.com/mitp19/rSleepPSGcohort/issues).
