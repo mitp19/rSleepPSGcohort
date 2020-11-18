@@ -1,20 +1,19 @@
 #' Process XML annonated data files
 #'
-#' A function that takes a directory of xml files and outputs sleep summary metrics 
+#' A function that takes the output from ProcessData and visualizes total sleep time in minutes by participant
 #'
-#' @param directory file path to directory containing individual annonated sleep data files in standard profusion XML format
-#' @return Returns a dataframe of sleep summary metrics per input file 
+#' @param summaryMetrics dataframe output
+#' @return Returns a ggplot bar graph of timeasleep
 #'
 #' @examples
-#' VisualizeSummaryMetrics <- ProcessData(summaryMetrics)
+#' metricsDf <- ProcessData("data")
+#' print(VisualizeSummaryMetrics(metricsDf))
 #'
 #' @export VisualizeSummaryMetrics
-#' @importFrom ggplot2 ggplot
-#' 
-#' 
+#' @importFrom ggplot2
 
 VisualizeSummaryMetrics <- function(summaryMetrics) {
-  metricsPlot <- ggplot2::ggplot(summaryMetrics, ggplot2::aes(x=filename, y=time_awake)) +
+  metricsPlot <- ggplot2::ggplot(summaryMetrics, ggplot2::aes(x=filename, y=time_asleep)) +
                                    ggplot2::geom_bar(stat="identity", fill="steelblue")
   return(metricsPlot)
 }

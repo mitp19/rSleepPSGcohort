@@ -27,10 +27,6 @@ data(package = "rSleepPSGcohort") # optional
 `rSleepPSGcohort` contains 2 functions to help aggregate and visualize human-scored scored sleep data. *ProcessData* takes a directory of sleep PSG XML files and combines the key
 metrics into a dataframe. *VisualizeSummaryMetrics* takes the output from *ProcessData*, returning a visual of total sleep time, wake time and night time for each individual. 
 
-``` r
-browseVignettes("rSleepPSGcohort")
-```
-
 The package tree structure is provided below.
 
 
