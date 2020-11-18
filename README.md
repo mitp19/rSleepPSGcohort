@@ -28,16 +28,13 @@ The package tree structure is provided below.
 
 ## Contributions
 
-The author of this package is Mit Patel. The *ProcessData* functions uses the *XML* package to read XML data files and convert them to data fames. The *VisualizeSummaryMetrics* does data visualization with the ggplot2 library.
-
 ## References
 
-R Core Team (2020). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. <https://www.R-project.org/>
+R Core Team (2020). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. https://www.R-project.org/
+  
+  Wickham, H. and Bryan, J. (2019). *R Packages* (2nd edition). Newton, Massachusetts: O'Reilly Media. https://r-pkgs.org/
 
-Wickham, H. and Bryan, J. (2019). *R Packages* (2nd edition). Newton, Massachusetts: O'Reilly Media. <https://r-pkgs.org/>
-
-Zhang, G.-Q., Cui, L., Mueller, R., Tao, S., Kim, M., Rueschman, M., Mariani, S., Mobley, D., & Redline, S. (2018). The National Sleep Research Resource: Towards a sleep data commons. Journal of the American Medical Informatics Association: JAMIA, 25(10), 1351–1358. <https://doi.org/10.1093/jamia/ocy064>
+Zhang, G.-Q., Cui, L., Mueller, R., Tao, S., Kim, M., Rueschman, M., Mariani, S., Mobley, D., & Redline, S. (2018). The National Sleep Research Resource: Towards a sleep data commons. Journal of the American Medical Informatics Association: JAMIA, 25(10), 1351–1358. https://doi.org/10.1093/jamia/ocy064
 
 ## Acknowledgements
-
 This package was developed for BCB410H: Applied Bioinformatics, University of Toronto, Toronto, Canada, 2020. `rSleepPSGcohort` welcomes issues, enhancement requests, and other contributions. To submit an issue, use the [GitHub issues](https://github.com/mitp19/rSleepPSGcohort/issues).

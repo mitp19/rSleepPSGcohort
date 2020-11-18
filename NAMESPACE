@@ -2,5 +2,6 @@
 
 export(ProcessData)
 export(VisualizeSummaryMetrics)
-importFrom(XML,methods)
+importFrom(XML,)
 importFrom(ggplot2,)
+importFrom(methods,)

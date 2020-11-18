@@ -9,7 +9,7 @@
 #' metricsDf <- ProcessData("data")
 #' print(VisualizeSummaryMetrics(metricsDf))
 #'
-#' @export VisualizeSummaryMetrics
+#' @export
 #' @importFrom ggplot2
 
 VisualizeSummaryMetrics <- function(summaryMetrics) {
