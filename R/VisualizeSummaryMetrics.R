@@ -9,14 +9,12 @@
 #' VisualizeSummaryMetrics <- ProcessData(summaryMetrics)
 #'
 #' @export VisualizeSummaryMetrics
-#' @importFrom ggplot2
+#' @importFrom ggplot2 ggplot
 #' 
 #' 
 
-VisualizeSummaryMetrics <- function() {
-  
-  
+VisualizeSummaryMetrics <- function(summaryMetrics) {
+  metricsPlot <- ggplot2::ggplot(summaryMetrics, ggplot2::aes(x=filename, y=time_awake)) +
+                                   ggplot2::geom_bar(stat="identity", fill="steelblue")
+  return(metricsPlot)
 }
-
-summary <- ProcessData("data")
-VisualizeSummaryMetrics(summary)

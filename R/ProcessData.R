@@ -6,7 +6,7 @@
 #' @return Returns a dataframe of sleep summary metrics per input file 
 #'
 #' @examples
-#' sleepSummary <- ProcessData(data)
+#' sleepSummary <- ProcessData("data")
 #'
 #' @export ProcessData
 #' @importFrom XML methods
@@ -19,8 +19,8 @@ ProcessData <- function(directory) {
     colnames(summary_df) <- c("filename", "minutes_observed", "time_awake", "time_asleep")
     for (f in files) {
       xml_file_path <- paste(directory, f, sep="/")
-      xml_data_file <- xmlParse(file = xml_file_path)
-      sleep_stages <- xmlToDataFrame(nodes = xmlChildren(xmlRoot(xml_data_file)[["SleepStages"]]))
+      xml_data_file <- XML::xmlParse(file = xml_file_path)
+      sleep_stages <- XML::xmlToDataFrame(nodes = XML::xmlChildren(XML::xmlRoot(xml_data_file)[["SleepStages"]]))
       colnames(sleep_stages) <- c("stage") 
       sleep_stages$stage = as.numeric(sleep_stages$stage)
       sleep_stage_sums <- list()
@@ -31,5 +31,3 @@ ProcessData <- function(directory) {
     return(summary_df)
     
 }
-
-summary_df <- ProcessData("data")
