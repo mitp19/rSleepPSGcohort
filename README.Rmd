@@ -17,9 +17,9 @@ library("rSleepPSGcohort")
 
 To run the Shiny spp
 ```r
-runTestingPackage()
+runWebApp()
 ```
-
+To use the app, select a folder with xml sleep profusion file (i.e this folder here: )
 
 ## Overview 
 ```r
@@ -30,7 +30,8 @@ data(package = "rSleepPSGcohort") # optional
 `rSleepPSGcohort` contains 2 functions to help aggregate and visualize human-scored scored sleep data. *ProcessData* takes a directory of sleep PSG XML files and combines the key
 metrics into a dataframe. *VisualizeSummaryMetrics* takes the output from *ProcessData*, returning a visual of total sleep time, wake time and night time for each individual. 
 
-The package tree structure is provided below.
+Here is a visual overview of the package: 
+![](./inst/extdata/flowchart.png)
 
 
 ## Contributions

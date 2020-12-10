@@ -6,7 +6,7 @@
 #' @return Returns a ggplot bar graph of timeasleep
 #'
 #' @examples
-#' metricsDf <- ProcessData("data")
+#' 
 #' print(VisualizeSummaryMetrics(metricsDf))
 #'
 #' @export

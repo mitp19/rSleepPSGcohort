@@ -14,8 +14,9 @@
 #' Grolemund, G. (2015). Learn Shiny - Video Tutorials. \href{https://shiny.rstudio.com/tutorial/}{Link}
 #'
 #' @export
+#' @import ggplot2
+#' @import shinyFiles
 #' @importFrom shiny runApp
-
 runWebApp <- function() {
   appDir <- system.file("shiny-scripts",
                         package = "rSleepPSGcohort")
