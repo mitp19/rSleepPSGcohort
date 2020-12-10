@@ -6,7 +6,9 @@
 #' @return Returns a dataframe of sleep summary metrics per input file 
 #'
 #' @examples
-#' sleepSummary <- ProcessData("data")
+#' file_path <- system.file("inst", "extdata", "raw_data")
+#' sleepSummary <- ProcessData(file_path)
+#' sleepSummary
 #'
 #' @export
 #' @import XML
@@ -15,6 +17,7 @@
 
 ProcessData <- function(directory) {
     files <- list.files(directory)
+    print(files)
     sleep_stage_codes <- c(1, 2, 3, 4, 5)
     summary_df <- data.frame(matrix(ncol = 4, nrow = 0))
     colnames(summary_df) <- c("filename", "minutes_observed", "time_awake", "time_asleep")
