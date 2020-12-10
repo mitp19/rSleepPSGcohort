@@ -15,7 +15,10 @@ devtools::install_github("mitp19/rSleepPSGcohort", build_vignettes = TRUE)
 library("rSleepPSGcohort")
 ```
 
-
+To run the Shiny spp
+```r
+runTestingPackage()
+```
 
 
 ## Overview 
@@ -35,11 +38,11 @@ The author of this package is Mit Patel. The *ProcessData* functions uses the *X
 
 
 ## References
-R Core Team (2020). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria. https://www.R-project.org/
+R Core Team (2020). R: A language and environment for statistical computing. _R Foundation for Statistical Computing_, Vienna, Austria. https://www.R-project.org/
   
 Wickham, H. and Bryan, J. (2019). *R Packages* (2nd edition). Newton, Massachusetts: O'Reilly Media. https://r-pkgs.org/
 
-Zhang, G.-Q., Cui, L., Mueller, R., Tao, S., Kim, M., Rueschman, M., Mariani, S., Mobley, D., & Redline, S. (2018). The National Sleep Research Resource: Towards a sleep data commons. Journal of the American Medical Informatics Association: JAMIA, 25(10), 1351–1358. https://doi.org/10.1093/jamia/ocy064
+Zhang, G.-Q., Cui, L., Mueller, R., Tao, S., Kim, M., Rueschman, M., Mariani, S., Mobley, D., & Redline, S. (2018). The National Sleep Research Resource: Towards a sleep data commons. _Journal of the American Medical Informatics Association: JAMIA, 25(10)_, 1351–1358. https://doi.org/10.1093/jamia/ocy064
 
 
 ## Acknowledgements 

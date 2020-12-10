@@ -16,6 +16,8 @@ Returns a dataframe of sleep summary metrics per input file
 A function that takes a directory of xml files and outputs sleep summary metrics
 }
 \examples{
-sleepSummary <- ProcessData("data")
+fpath <- system.file("extdata", "raw_data", package = "rSleepPSGcohort")
+sleepSummary <- ProcessData(fpath)
+sleepSummary
 
 }

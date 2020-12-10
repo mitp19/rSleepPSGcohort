@@ -2,6 +2,8 @@
 
 export(ProcessData)
 export(VisualizeSummaryMetrics)
+export(runWebApp)
 import(XML)
 import(ggplot2)
 import(methods)
+importFrom(shiny,runApp)
