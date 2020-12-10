@@ -7,7 +7,7 @@ This package makes it easier to do cohort analysis of participants that take par
 
 ## Installation
 
-The package can be installed with the following code snippet from Github:
+The package can be installed with the following code snippet from Github: https://drive.google.com/drive/folders/1aE6LRsblgjoieFlG-OoyCbfy2Db3AulJ?usp=sharing
 
 ``` r
 require("devtools")
